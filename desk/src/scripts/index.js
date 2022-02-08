@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === 'development') {
 window.addEventListener('DOMContentLoaded', function () {
 	'use strict';
 	function rain() {
-		let amount = 100;
+		let amount = 120;
 		let body = document.querySelector('body');
 		let i = 0;
 		while (i < amount) {
@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			drop.style.width = 0.2 + size + 'px';
 			drop.style.left = posX + 'px';
 			drop.style.animationDelay = delay + 's';
-			drop.style.animationDuration = 2 + duration + 's';
+			drop.style.animationDuration = 1 + duration + 's';
 			body.appendChild(drop);
 			i++;
 		}
